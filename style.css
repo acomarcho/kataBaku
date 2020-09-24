@@ -28,7 +28,7 @@ html,body
 	background-color: #255C99;
 	transition: background-color 1000ms linear;
 	height: 100vh;
-	padding: 200px;
+	padding: 100px;
 }
 
 .black {
@@ -47,8 +47,15 @@ html,body
 	color: #FFFFFF;
 	border-radius: 10%;
 	padding: 50px 100px;
-	margin: 50px 100px;
+	margin: 100px;
 }
+
+@media screen and (max-width: 600px) {
+	.quizBox {
+		margin: 20px;
+	}
+}
+
 
 .shadow {
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
