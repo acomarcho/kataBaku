@@ -7,6 +7,19 @@ html,body
     overflow-x: hidden; 
 }
 
+.headerBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #262626;
+	color: #fff;
+}
+
+.headerBox p {
+	margin: 0px;
+	padding: 25px;
+}
+
 .quizContainer {
 	display: flex;
 	justify-content: center;
@@ -15,6 +28,7 @@ html,body
 	background-color: #255C99;
 	transition: background-color 1000ms linear;
 	height: 100vh;
+	padding: 200px;
 }
 
 .black {
@@ -32,7 +46,7 @@ html,body
 	text-align: center;
 	color: #FFFFFF;
 	border-radius: 10%;
-	padding: 100px;
+	padding: 50px 100px;
 	margin: 50px 100px;
 }
 
@@ -42,7 +56,7 @@ html,body
   box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-h1 {
+h1, p {
     text-align: center;
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
