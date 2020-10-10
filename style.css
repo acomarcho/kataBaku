@@ -23,7 +23,6 @@ html,body
 .quizContainer {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
 	align-items: center;
 	background-color: #255C99;
 	transition: background-color 1000ms linear;
@@ -76,6 +75,10 @@ h1, p {
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 1em;
+	}
+	.quizContainer {
+		flex-wrap: wrap;
+	align-items: center;
 	}
 }
 
