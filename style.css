@@ -23,12 +23,18 @@ html,body
 .quizContainer {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
 	align-items: center;
 	background-color: #255C99;
 	transition: background-color 1000ms linear;
 	height: 100vh;
 	padding: 100px;
+}
+
+@media screen and (max-width: 600px) {
+	.quizContainer {
+		flex-wrap: wrap;
+		align-items: center;
+	}
 }
 
 .black {
