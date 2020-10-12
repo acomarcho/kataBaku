@@ -30,6 +30,13 @@ html,body
 	padding: 100px;
 }
 
+@media screen and (max-width: 600px) {
+	.quizContainer {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+
 .black {
 	background-color: #000000;
 	transition: background-color 500ms linear;
@@ -75,10 +82,6 @@ h1, p {
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 1em;
-	}
-	.quizContainer {
-		flex-wrap: wrap;
-	align-items: center;
 	}
 }
 
