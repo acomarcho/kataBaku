@@ -19,6 +19,20 @@ body {
   padding: 25px;
 }
 
+.h-fixed-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+.h-fixed-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
 /* .quizContainer {
   display: flex;
   justify-content: center;
