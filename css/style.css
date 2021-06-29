@@ -74,7 +74,7 @@ p {
 }
 
 .btn {
-  width: 360px;
+  width: 240px;
   padding: 1rem 2rem;
   background-color: var(--buttonColor);
   border: transparent;
@@ -90,6 +90,12 @@ p {
 .btn:hover {
   transform: scale(1.05);
   box-shadow: var(--shadow-xl);
+}
+
+@media screen and (min-width: 576px) {
+  .btn {
+    width: 360px;
+  }
 }
 
 .footer {
