@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: var(--textColor);
   text-align: center;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem;
 }
 
 .main-paragraph {
