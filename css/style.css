@@ -124,12 +124,13 @@ p {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
 }
 
 .stat {
   background-color: var(--buttonColor);
   padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .stat p {
