@@ -1,70 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
     <title>Kata Baku</title>
-  </head>
-  <body>
-    <audio id="right">
-      <source src="correct.wav" />
-    </audio>
-    <audio id="wrong">
-      <source src="wrong.wav" />
-    </audio>
-
-    <header>
-      <div class="headerBox h-fixed-top">
-        <p>Klik salah satu jawaban untuk memulai permainan.</p>
-      </div>
-    </header>
-
-    <content>
-      <div class="quizContainer">
-        <div class="quizBox shadow box-1"></div>
-        <div class="quizBox shadow box-2"></div>
-      </div>
-    </content>
-
-    <footer>
-      <div class="headerBox h-fixed-bottom">
-        <p>Marchotridyo, 2020</p>
-      </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+</head>
+<body>
+   <main class="hero">
+       <div class="main-container">
+           <h2>kataBaku</h2>
+           <div class="underline"></div>
+           <p class="main-paragraph">Pilihlah jawaban yang benar dari kedua tombol di bawah ini!</p>
+           <div class="btn-container">
+               <button class="btn btn-1">geladi</button>
+               <button class="btn btn-2">gladi</button>
+           </div>
+           <p class="answer-text">Selamat belajar!</p>
+           <div class="underline"></div>
+           <div class="stats">
+            <div class="stat">
+                <p class="correct-count">0</p>
+                <p>BENAR</p>
+            </div>
+            <div class="stat">
+                <p class="wrong-count">0</p>
+                <p>SALAH</p>
+            </div>
+           </div>
+       </div>
+   </main>
+   <footer class="footer">
+       <p>Made with <i class="fas fa-heart"></i>, Marchotridyo</p>
+   </footer>
+   <script src="./js/app.js"></script>
+</body>
 </html>

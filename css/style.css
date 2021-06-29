@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headingColor: #fffffe;
+  --textColor: #b7c1ec;
+  --buttonColor: #eebbc3;
+  --buttonTextColor: #232946;
+  --backgroundColor: #232946;
+  --correctColor: #00ebc7;
+  --wrongColor: #ff5470;
+  --font: 'Nunito', sans-serif;
+  --transition: all 0.3s linear;
+  --radius: 2rem;
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --footerHeight: 80px;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: var(--font);
+  letter-spacing: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headingColor);
+  text-align: center;
+}
+
+p {
+  color: var(--textColor);
+  text-align: center;
+  letter-spacing: 0.25rem;
+}
+
+.main-paragraph {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.main-container {
+  max-width: 1170px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 16rem;
+  height: 0.25rem;
+  background: var(--buttonColor);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.hero {
+  width: 100vw;
+  height: calc(100vh - var(--footerHeight));
+  display: grid;
+  place-items: center;
+}
+
+.btn-container {
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+  padding: 1rem 0;
+}
+
+.btn {
+  width: 360px;
+  padding: 1rem 2rem;
+  background-color: var(--buttonColor);
+  border: transparent;
+  color: var(--buttonTextColor);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.075rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+.footer {
+  height: var(--footerHeight);
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.answer-text {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.correct {
+  opacity: 1;
+  color: var(--correctColor);
+}
+
+.wrong {
+  opacity: 1;
+  color: var(--wrongColor);
+}
+
+.stats {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.stat {
+  background-color: var(--buttonColor);
+  padding: 1rem;
+}
+
+.stat p {
+  color: var(--buttonTextColor);
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+}
+
+.stat .correct-count {
+  font-size: 2rem;
+}
+
+.stat .wrong-count {
+  font-size: 2rem;
+}
