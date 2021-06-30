@@ -18,8 +18,8 @@ let index = -1;
 let correctCount = 0;
 let wrongCount = 0;
 
-const correctSound = new Audio("../audio/correct.wav");
-const wrongSound = new Audio("../audio/wrong.mp3");
+const correctSound = new Audio("https://acomarcho.github.io/kataBaku/audio/correct.wav");
+const wrongSound = new Audio("https://acomarcho.github.io/kataBaku/audio/wrong.mp3");
 
 const soundButton = document.querySelector(".btn-sound");
 let sound = true;
