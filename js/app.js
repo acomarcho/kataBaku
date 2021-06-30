@@ -18,6 +18,19 @@ let index = -1;
 let correctCount = 0;
 let wrongCount = 0;
 
+const correctSound = new Audio("../audio/correct.wav");
+const wrongSound = new Audio("../audio/wrong.mp3");
+
+const soundButton = document.querySelector(".btn-sound");
+let sound = true;
+
+soundButton.addEventListener("click", function () {
+  const icon = soundButton.querySelector("i");
+  icon.classList.toggle("fa-volume-up");
+  icon.classList.toggle("fa-volume-mute");
+  sound = !sound;
+});
+
 function SetUp() {
     while (index === lastIndex) {
         index = Math.floor(Math.random() * baku.length);
@@ -41,6 +54,9 @@ function answer(e) {
         answerText.classList.add('correct');
         correctCount += 1;
         correctStat.textContent = correctCount;
+        if (sound) {
+            correctSound.play();
+        }
         SetUp();
     } else {
         console.log('clicked on wrong answer!');
@@ -50,6 +66,9 @@ function answer(e) {
         answerText.classList.add('wrong');
         wrongCount += 1;
         wrongStat.textContent = wrongCount;
+        if (sound) {
+            wrongSound.play();
+        }
         SetUp();
     }
 }

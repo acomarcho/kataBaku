@@ -61,9 +61,11 @@ p {
 
 .hero {
   width: 100vw;
-  height: calc(100vh - var(--footerHeight));
+  min-height: calc(100vh - var(--footerHeight));
   display: grid;
   place-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .btn-container {
@@ -100,7 +102,7 @@ p {
 
 .footer {
   height: var(--footerHeight);
-  background-color: black;
+  background-color: #111;
   display: grid;
   place-items: center;
 }
@@ -131,6 +133,7 @@ p {
   padding: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .stat p {
@@ -146,4 +149,36 @@ p {
 
 .stat .wrong-count {
   font-size: 2rem;
+}
+
+/* sound */
+.btn-sound {
+  margin: 0 0.5rem;
+  width: 3rem;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--buttonColor);
+  border: transparent;
+  color: var(--buttonTextColor);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.btn-sound:hover {
+  transform: scale(1.2);
+}
+
+.sound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sound-container p {
+  margin-right: 0.5rem;
+}
+
+.btn-sound {
+  margin-left: 0.5rem;
 }
